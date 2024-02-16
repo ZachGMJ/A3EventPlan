@@ -44,56 +44,66 @@
             // lblHeading
             // 
             lblHeading.AutoSize = true;
-            lblHeading.Font = new Font("Tahoma", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblHeading.Location = new Point(273, 33);
+            lblHeading.Font = new Font("Tahoma", 16F);
+            lblHeading.Location = new Point(260, 31);
             lblHeading.Name = "lblHeading";
-            lblHeading.Size = new Size(279, 34);
+            lblHeading.Size = new Size(266, 33);
             lblHeading.TabIndex = 0;
             lblHeading.Text = "Farm Burger Specials";
             lblHeading.Click += label1_Click;
             // 
             // picPrime
             // 
-            picPrime.Location = new Point(98, 102);
+            picPrime.Image = Properties.Resources.prime;
+            picPrime.Location = new Point(66, 84);
             picPrime.Name = "picPrime";
-            picPrime.Size = new Size(214, 232);
+            picPrime.Size = new Size(260, 250);
+            picPrime.SizeMode = PictureBoxSizeMode.StretchImage;
             picPrime.TabIndex = 1;
             picPrime.TabStop = false;
+            picPrime.Visible = false;
+            picPrime.Click += picPrime_Click;
             // 
             // picVeggie
             // 
-            picVeggie.Location = new Point(504, 102);
+            picVeggie.Image = Properties.Resources.veggie;
+            picVeggie.Location = new Point(479, 84);
             picVeggie.Name = "picVeggie";
-            picVeggie.Size = new Size(214, 232);
+            picVeggie.Size = new Size(260, 250);
+            picVeggie.SizeMode = PictureBoxSizeMode.StretchImage;
             picVeggie.TabIndex = 2;
             picVeggie.TabStop = false;
+            picVeggie.Visible = false;
             // 
             // btnPrime
             // 
-            btnPrime.Location = new Point(147, 355);
+            btnPrime.Location = new Point(124, 352);
             btnPrime.Name = "btnPrime";
-            btnPrime.Size = new Size(104, 29);
+            btnPrime.Size = new Size(128, 35);
             btnPrime.TabIndex = 3;
             btnPrime.Text = "Prime Beef";
             btnPrime.UseVisualStyleBackColor = true;
+            btnPrime.Click += btnPrime_Click;
             // 
             // btnVeggie
             // 
             btnVeggie.Location = new Point(553, 355);
             btnVeggie.Name = "btnVeggie";
-            btnVeggie.Size = new Size(104, 29);
+            btnVeggie.Size = new Size(128, 35);
             btnVeggie.TabIndex = 4;
             btnVeggie.Text = "Veggie";
             btnVeggie.UseVisualStyleBackColor = true;
+            btnVeggie.Click += btnVeggie_Click;
             // 
             // btnSelectMeal
             // 
-            btnSelectMeal.Location = new Point(348, 355);
+            btnSelectMeal.Location = new Point(338, 352);
             btnSelectMeal.Name = "btnSelectMeal";
-            btnSelectMeal.Size = new Size(103, 29);
+            btnSelectMeal.Size = new Size(128, 35);
             btnSelectMeal.TabIndex = 5;
             btnSelectMeal.Text = "Select Meal";
             btnSelectMeal.UseVisualStyleBackColor = true;
+            btnSelectMeal.Click += btnSelectMeal_Click;
             // 
             // label1
             // 
@@ -114,12 +124,13 @@
             label2.Size = new Size(172, 18);
             label2.TabIndex = 7;
             label2.Text = "Enjoy your special burger";
+            label2.Visible = false;
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(348, 498);
+            btnExit.Location = new Point(338, 496);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(94, 29);
+            btnExit.Size = new Size(128, 35);
             btnExit.TabIndex = 8;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = true;
@@ -128,7 +139,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(865, 552);
+            ClientSize = new Size(782, 543);
             Controls.Add(btnExit);
             Controls.Add(label2);
             Controls.Add(label1);
