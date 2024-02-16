@@ -50,7 +50,6 @@
             lblHeading.Size = new Size(266, 33);
             lblHeading.TabIndex = 0;
             lblHeading.Text = "Farm Burger Specials";
-            lblHeading.Click += label1_Click;
             // 
             // picPrime
             // 
@@ -62,7 +61,6 @@
             picPrime.TabIndex = 1;
             picPrime.TabStop = false;
             picPrime.Visible = false;
-            picPrime.Click += picPrime_Click;
             // 
             // picVeggie
             // 
@@ -134,6 +132,7 @@
             btnExit.TabIndex = 8;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // frmBurgers
             // 

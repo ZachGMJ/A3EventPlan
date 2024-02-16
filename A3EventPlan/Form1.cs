@@ -7,38 +7,29 @@ namespace A3EventPlan
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picPrime_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //Button for prime beef burger picture
         private void btnPrime_Click(object sender, EventArgs e)
         {
             picVeggie.Visible = false;
             picPrime.Visible = true;
         }
+        //Button for veggie burger picture
         private void btnVeggie_Click(object sender, EventArgs e)
         {
             picPrime.Visible = false;
             picVeggie.Visible = true;
         }
+        //select meal button action
         private void btnSelectMeal_Click(object sender, EventArgs e)
         {
-            if(picVeggie.Visible)
-            {
-                btnPrime.Enabled = false;
-                btnVeggie.Enabled = false;
-                label2.Visible = true;
-            }
+            btnPrime.Enabled = false;
+            btnVeggie.Enabled = false;
+            label2.Visible = true;
         }
+        //Exit button action
         private void btnExit_Click(object sender, EventArgs e)
         {
-           Close();
+            Close();
         }
     }
 }
